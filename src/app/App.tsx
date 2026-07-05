@@ -940,9 +940,9 @@ function CartDrawer({
   onQty: (name: string, delta: number) => void;
 }) {
   const total = cart.reduce((s, i) => {
-    const n = parseFloat(i.price.replace(/[^0-9.]/g, ""));
-    return s + (isNaN(n) ? 0 : n * i.qty);
-  }, 0);
+  const n = parseFloat(i.price.replace(/[^0-9]/g, ""));
+  return s + (isNaN(n) ? 0 : n * i.qty);
+}, 0);
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end">
