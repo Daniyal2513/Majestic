@@ -233,7 +233,7 @@ function foodImg(index: number) {
 }
 
 // ─── Cart types ───────────────────────────────────────────────────────────────
-type CartItem = { name: string; price: string; qty: number };
+type CartItem = { name: string; price: number; qty: number };
 
 // ─── NavBar ───────────────────────────────────────────────────────────────────
 function NavBar({ cartCount, onCartClick }: { cartCount: number; onCartClick: () => void }) {
@@ -940,7 +940,7 @@ function CartDrawer({
   onQty: (name: string, delta: number) => void;
 }) {
   const total = cart.reduce((s, i) => {
-    const n = parseFloat(i.price.replace(/[^0-9.]/g, "").replace(",", ""));
+    const n = parseFloat(i.price.replace(/[^0-9.]/g, ""));
     return s + (isNaN(n) ? 0 : n * i.qty);
   }, 0);
 
