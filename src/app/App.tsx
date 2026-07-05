@@ -371,7 +371,7 @@ function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Logo emblem */}
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center mt-2">
           <div className="w-28 h-28 rounded-full overflow-hidden border-2 shadow-2xl" style={{ borderColor: GOLD }}>
             <ImageWithFallback
               src={logoSrc}
@@ -389,7 +389,7 @@ function Hero() {
         </p>
 
         <h1
-          className="mb-2 leading-none"
+          className="mt-2 leading-none"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
             fontSize: "clamp(3rem, 10vw, 7rem)",
