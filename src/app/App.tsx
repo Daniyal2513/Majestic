@@ -382,7 +382,7 @@ function Hero() {
         </div>
 
         <p
-          className="mb-3 text-sm uppercase tracking-widest"
+          className="mb-1 text-sm uppercase tracking-widest"
           style={{ color: GOLD, fontFamily: "'Montserrat', sans-serif", letterSpacing: "0.3em" }}
         >
           Welcome to
