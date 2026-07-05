@@ -270,12 +270,12 @@ function NavBar({ cartCount, onCartClick }: { cartCount: number; onCartClick: ()
             alt="The Majestic Cafe logo"
             className="h-14 w-14 object-contain rounded-full"
           />
-          <span
+          {/* <span
             style={{ color: GOLD, fontFamily: "'Cormorant Garamond', serif", fontSize: "1.25rem", letterSpacing: "0.05em" }}
             className="hidden sm:block font-semibold"
           >
             The Majestic Cafe
-          </span>
+          </span> */}
         </button>
 
         {/* Desktop nav */}
