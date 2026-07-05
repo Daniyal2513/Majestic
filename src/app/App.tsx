@@ -268,7 +268,7 @@ function NavBar({ cartCount, onCartClick }: { cartCount: number; onCartClick: ()
           <ImageWithFallback
             src={logoSrc}
             alt="The Majestic Cafe logo"
-            className="h-25 w-25 object-contain rounded-full"
+            className="h-22 w-22 object-contain rounded-full"
           />
           {/* <span
             style={{ color: GOLD, fontFamily: "'Cormorant Garamond', serif", fontSize: "1.25rem", letterSpacing: "0.05em" }}
